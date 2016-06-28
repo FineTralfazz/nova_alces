@@ -30,13 +30,17 @@ post '/github_hook' do
       when 'robotmoose'
         robotmoose env
       else
-        puts "Unknown repo: #{ repo }"
+        halt 400, "Unknown repo: #{ repo }"
       end
     else
-      puts "Unknown env: #{ env }"
+      halt 400, "Unknown env: #{ env }"
     end
   else
-    puts "Invalid HMAC"
+    halt 401, "Invalid HMAC"
   end
+end
+
+get '/' do
+  "Nova Alces is running."
 end
 
