@@ -1,0 +1,21 @@
+REFS = {
+  :test => 'refs/heads/master',
+  :prod => 'refs/heads/production'
+}
+
+DIRS = {
+  :test => '/var/www/test',
+  :prod => '/var/www/prod'
+}
+
+SERVICES = {
+  :test => {
+    :superstar => 'superstar-test'
+  },
+  :prod => {
+    :superstar => 'superstar'
+  }
+}
+
+GITHUB_WEBHOOK_SECRET = 'whatever'
+

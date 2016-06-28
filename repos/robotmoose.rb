@@ -3,5 +3,5 @@ def robotmoose(env)
   Dir.chdir dir
   git_pull
   build_superstar
-  restart_service SERVICES[env]
+  restart_service SERVICES[env][:superstar]
 end

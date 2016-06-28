@@ -1,4 +1,3 @@
-def git_pull()
-  puts '~ Git pull:'
+def git_pull
   puts `git pull`
 end
