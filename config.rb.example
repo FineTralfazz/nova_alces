@@ -1,21 +1,20 @@
 REFS = {
-  :test => 'refs/heads/master',
-  :prod => 'refs/heads/production'
-}
+  test: 'refs/heads/master',
+  prod: 'refs/heads/production'
+}.freeze
 
 DIRS = {
-  :test => '/var/www/test',
-  :prod => '/var/www/prod'
-}
+  test: '/var/www/test',
+  prod: '/var/www/prod'
+}.freeze
 
 SERVICES = {
-  :test => {
-    :superstar => 'superstar-test'
+  test: {
+    superstar: 'superstar-test'
   },
-  :prod => {
-    :superstar => 'superstar'
+  prod: {
+    superstar: 'superstar'
   }
-}
+}.freeze
 
-GITHUB_WEBHOOK_SECRET = 'whatever'
-
+GITHUB_WEBHOOK_SECRET = 'whatever'.freeze
